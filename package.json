@@ -1,0 +1,36 @@
+{
+  "name": "open-actions",
+  "module": "index.ts",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Open Actions ",
+  "main": "./dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc && bun build ./index.ts --outdir ./dist",
+    "start": "bun run dist/index.js",
+    "test": "bun run jest"
+
+  },
+  "keywords": [
+    "open",
+    "actions"
+  ],
+  "author": "muhammad-fiaz",
+  "devDependencies": {
+    "@babel/core": "^7.25.2",
+    "@babel/preset-env": "^7.25.3",
+    "@babel/preset-typescript": "^7.24.7",
+    "@jest/core": "^29.7.0",
+    "@jest/transform": "^29.7.0",
+    "@types/bun": "latest",
+    "@types/jest": "^29.5.12",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "ts-jest": "^29.2.4"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
