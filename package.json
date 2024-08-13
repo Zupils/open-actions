@@ -2,19 +2,23 @@
   "name": "open-actions",
   "module": "index.ts",
   "type": "module",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Open Actions ",
   "main": "./dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc && bun build ./index.ts --outdir ./dist",
     "start": "bun run dist/index.js",
-    "test": "bun run jest"
-
+    "test": "bun run jest",
+    "postinstall": "bun install",
+    "prepublish": "bun run build && bun run test"
   },
   "keywords": [
-    "open",
-    "actions"
+    "open-actions",
+    "open-action",
+    "js",
+    "javascript",
+    "typescript"
   ],
   "author": "muhammad-fiaz",
   "devDependencies": {
@@ -32,5 +36,8 @@
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@types/node": "^22.2.0"
   }
 }
