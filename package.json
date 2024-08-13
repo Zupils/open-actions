@@ -10,7 +10,6 @@
     "build": "tsc && bun build ./index.ts --outdir ./dist",
     "start": "bun run dist/index.js",
     "test": "bun run jest",
-    "postinstall": "bun install",
     "prepublish": "bun run build && bun run test"
   },
   "keywords": [
