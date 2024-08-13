@@ -1,12 +1,12 @@
-import { ajax } from '../dist';
-import { $, addClass, removeClass, toggleClass, setText, setHTML, setCSS } from '../dist';
-import { on, trigger } from '../dist';
-import { animate } from '../dist';
-import { select } from '../dist';
-import { getInputValue, setInputValue } from '../dist';
-import { setLocalStorage, getLocalStorage, removeLocalStorage } from '../dist';
-import { delegateEvent } from '../dist';
-import { debounce, throttle, getDataAttribute, setDataAttribute } from '../dist';
+import { ajax } from '../dist/index';
+import { addClass, toggleClass, setText, setCSS } from '../dist/index';
+import { on, trigger } from '../dist/index';
+import { animate } from '../dist/index';
+import { select } from '../dist/index';
+import { getInputValue, setInputValue } from '../dist/index';
+import { setLocalStorage, getLocalStorage, removeLocalStorage } from '../dist/index';
+import { delegateEvent } from '../dist/index';
+import { debounce, throttle, getDataAttribute, setDataAttribute } from '../dist/index';
 
 // Test AJAX
 test('AJAX request should succeed', async () => {
