@@ -1,16 +1,14 @@
 {
   "name": "open-actions",
-  "module": "index.ts",
-  "type": "module",
   "version": "0.0.1",
-  "description": "Open Actions ",
+  "description": "Open Actions",
   "main": "./dist/index.js",
-  "types": "dist/index.d.ts",
+  "types": "./dist/index.d.ts",
+  "module": "./dist/index.js",
   "scripts": {
-    "build": "tsc && bun build ./index.ts --outdir ./dist",
-    "start": "bun run dist/index.js",
-    "test": "bun run jest",
-    "prepublish": "bun run build && bun run test"
+    "build": "tsc",
+    "test": "jest",
+    "prepublish": "npm run build && npm run test"
   },
   "keywords": [
     "open-actions",
@@ -26,7 +24,6 @@
     "@babel/preset-typescript": "^7.24.7",
     "@jest/core": "^29.7.0",
     "@jest/transform": "^29.7.0",
-    "@types/bun": "latest",
     "@types/jest": "^29.5.12",
     "babel-jest": "^29.7.0",
     "jest": "^29.7.0",
@@ -38,5 +35,9 @@
   },
   "dependencies": {
     "@types/node": "^22.2.0"
-  }
+  },
+  "files": [
+    "dist",
+    "index.d.ts"
+  ]
 }
